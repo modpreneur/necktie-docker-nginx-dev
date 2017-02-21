@@ -1,4 +1,4 @@
-FROM modpreneur/necktie-nginx:0.2
+FROM modpreneur/necktie-nginx:0.3
 
 MAINTAINER Martin Kolek <kolek@modpreneur.com>
 
@@ -8,8 +8,6 @@ RUN echo "http://dl-cdn.alpinelinux.org/alpine/v3.5/main" > /etc/apk/repositorie
 ENV TERM xterm
 RUN apk add --update \
     nano \
-    nodejs \
-    git \
     fish
 
-RUN echo "modpreneur/necktie-nginx-dev:0.2" >> /home/versions
+RUN echo "modpreneur/necktie-nginx-dev:0.3" >> /home/versions
