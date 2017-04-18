@@ -1,4 +1,4 @@
-FROM modpreneur/necktie-nginx:0.3
+FROM modpreneur/necktie-nginx:0.4
 
 MAINTAINER Martin Kolek <kolek@modpreneur.com>
 
@@ -10,4 +10,4 @@ RUN apk add --update \
     nano \
     fish
 
-RUN echo "modpreneur/necktie-nginx-dev:0.3" >> /home/versions
+RUN echo "modpreneur/necktie-nginx-dev:0.4" >> /home/versions
